@@ -3,7 +3,7 @@ ENV DIR_BE /opt/web-backend
 
 RUN mkdir $DIR_BE
 WORKDIR $DIR_BE
-EXPOSE 3030
+EXPOSE 3032
 
 # install and setup required software
 RUN wget -O - https://deb.adamhlavacek.com/pub.gpg | apt-key add - \

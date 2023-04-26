@@ -11,16 +11,17 @@ echo "Selected options are"
 echo "- DB: $DIR_DB"
 echo "- DATA: $DIR_DATA"
 
-docker stop ksi-be &>/dev/null
-docker rm ksi-be &>/dev/null
+docker stop gymbk-prg &>/dev/null
+docker rm gymbk-prg &>/dev/null
 docker run \
-  -p 3030:3030 \
-  -v "$DIR_DB:/var/ksi-be.ro/" \
+  -p 3032:3032 \
+  -v "$DIR_DB:/var/gymbk-prg.ro/" \
   -v "$DIR_DATA:/var/ksi-data.ro/" \
   --device /dev/fuse \
   --cap-add=SYS_ADMIN \
   --privileged=true \
   --security-opt apparmor:unconfined \
   -it \
-  --name ksi-be \
-  ksi-be
+  --name gymbk-prg \
+  gymbk-prg
+

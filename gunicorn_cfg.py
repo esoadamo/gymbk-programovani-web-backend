@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-bind='127.0.0.1:3031'
+bind='127.0.0.1:3032'
 workers=4
 timeout=60
 capture_output=True
