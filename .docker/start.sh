@@ -15,7 +15,7 @@ docker stop gymbk-prg &>/dev/null
 docker rm gymbk-prg &>/dev/null
 docker run \
   -p 3032:3032 \
-  -v "$DIR_DB:/var/gymbk-prg.ro/" \
+  -v "$DIR_DB:/var/ksi-be.ro/" \
   -v "$DIR_DATA:/var/ksi-data.ro/" \
   --device /dev/fuse \
   --cap-add=SYS_ADMIN \

@@ -1,12 +1,12 @@
-# Backend for Naskoc web
+# Backend for Gymbk Programming course
 
-[https://naskoc.fi.muni.cz](https://naskoc.fi.muni.cz/)
+[https://gymbkprg.adamhlavacek.com/]https://gymbkprg.adamhlavacek.com/)
 
 ## Running with docker
 
 The backend can be run inside a docker container for testing purposes.
 To build and start backend with database to be stored in your `~/ksi-be` execute `./.docker/build.sh --run ~/ksi-db ~/ksi-data`. 
-Already built docker images can be started by running `./.docker/start.sh ~/ksi-db ~/ksi-data` or `docker start -i ksi-be` if it was started at least one time before.
+Already built docker images can be started by running `./.docker/start.sh ~/ksi-db ~/ksi-data` or `docker start -i gymbk-prg` if it was started at least one time before.
 
 Though most of the API works out-of-the box, it is possible that you will run into 
 unexpected errors. If so, please create Issue with report and reproduction steps.
